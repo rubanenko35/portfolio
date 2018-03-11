@@ -1,0 +1,111 @@
+.navigation{
+  width: 200px;
+  height: 100%;
+  background: black;
+  display: grid;
+  grid-template-rows: 200px 1fr 50px;
+  &__logo{
+    background-image: url('../../assets/icons/main-logo.png');
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    & > a{
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__links{
+    grid-row-start: 2;
+    display: flex;
+    flex-direction: column;
+    &--wrapper{
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      opacity: 1;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 36px;
+    }
+    a {
+      color: #fff;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      padding-left: 22px;
+      font-size: 22px;
+    }
+    &--wrapper:hover{
+      background: rgba(197,197,197, 0.3);
+    }
+  }
+  &__social-networks{
+    grid-row-start: 3;
+    grid-row-end: 5;
+    &--icons{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 50px;
+      &_block{
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-size: 65%;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        transition: 0.5s;
+        opacity: 1;
+        a{
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &_block:hover{
+        opacity: 0.5;
+      }
+    }
+    &--all-rights{
+        width: 100%;
+        height: 11px;
+        font-size: 10px;
+        margin: 10px 0;
+        text-align: center;
+        p {
+          color: white;
+        }
+    }
+  }
+}
+
+.twitter{
+  background-image: url('../../assets/icons/twitter-white.png');
+}
+.facebook{
+  background-image: url('../../assets/icons/facebook-white.png');
+}
+.upwork{
+  background-size: 70%;
+  background-image: url('../../assets/icons/upwork-white.png');
+}
+.google{
+  background-image: url('../../assets/icons/google-white.png');
+}
+.vimeo{
+  background-image: url('../../assets/icons/vimeo-white.png');
+}
+.instagram{
+  background-image: url('../../assets/icons/instagram-logo.png');
+}
+
+.clicked{
+  background: grey;
+  transition: 1s;
+}
+

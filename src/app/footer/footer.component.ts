@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from '../app-service.service';
 
 @Component({
   selector: 'app-footer',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
+  data;
 
-  constructor() { }
+  constructor(private appService: AppService) { }
 
   ngOnInit() {
+    this.appService.getData('./assets/data/footer.json')
+      .subscribe( (data) => {
+        this.data = data;
+      })
   }
-
 }

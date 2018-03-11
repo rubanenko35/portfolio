@@ -1,3 +1,34 @@
-<p>
-  navigation works!
-</p>
+<div class="navigation">
+  <div class="navigation__logo" (click)="addClass('main')">
+    <a routerLink="/main"></a>
+  </div>
+  <div class="navigation__links" #navigation >
+    <div (click)="addClass()"
+         class="navigation__links--wrapper">
+      <a #main routerLink="/main">Main</a>
+    </div>
+    <div (click)="addClass()"
+         class="navigation__links--wrapper">
+      <a routerLink="/portfolio">Portfolio</a>
+    </div>
+  </div>
+  <div class="navigation__social-networks">
+    <div class="navigation__social-networks--icons">
+      <div class="navigation__social-networks--icons_block vimeo">
+        <a href="https://vimeo.com/coronafx" target="_blank"></a>
+      </div>
+      <div class="navigation__social-networks--icons_block facebook">
+        <a href="https://www.facebook.com/CoronaFX/" target="_blank"></a>
+      </div>
+      <div class="navigation__social-networks--icons_block instagram">
+        <a href="https://www.instagram.com" target="_blank"></a>
+      </div>
+      <div class="navigation__social-networks--icons_block upwork">
+        <a href="https://www.upwork.com/o/companies/_~01c45e8144ade2724a/" target="_blank"></a>
+      </div>
+    </div>
+    <div class="navigation__social-networks--all-rights">
+      <p>&#169; 2016 CoronaFX. ALL RIGHTS RESERVED</p>
+    </div>
+  </div>
+</div>

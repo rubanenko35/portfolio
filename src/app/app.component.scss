@@ -1,0 +1,20 @@
+.app-page{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 1fr 70px;
+}
+app-navigation{
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+router-outlet{
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+app-footer{
+  grid-column-start: 2;
+  grid-row-start: 2;
+}

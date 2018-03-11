@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "RobotoLight";
+  src: url("./assets/fonts/RobotoLight/RobotoLight.eot");
+  src: url("./assets/fonts/RobotoLight/RobotoLight.eot?#iefix") format("embedded-opentype"),
+  url("./assets/fonts/RobotoLight/RobotoLight.woff") format("woff"),
+  url("./assets/fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "RobotoLight";
+}
+
+

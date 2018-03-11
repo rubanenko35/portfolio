@@ -10,6 +10,7 @@ import { MainComponent } from './main/main.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { CommonModule } from '@angular/common';
 import { AppRoutingRoutes } from './app-routing.routes';
+import { AppService } from './app-service.service';
 
 
 @NgModule({
@@ -26,7 +27,7 @@ import { AppRoutingRoutes } from './app-routing.routes';
     MainComponent,
     PortfolioComponent
   ],
-  providers: [],
+  providers: [AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

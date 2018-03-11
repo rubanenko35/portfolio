@@ -1,3 +1,6 @@
-<p>
-  footer works!
-</p>
+<div class="footer">
+  <div *ngFor="let item of data" class="footer__data">
+    <p>{{ item.name }}</p>
+    <h3>{{ item.mail }}</h3>
+  </div>
+</div>
